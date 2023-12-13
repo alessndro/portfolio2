@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.progress-bar {
+  position: fixed;
+  top: 10vh;
+  border: thin solid gray;
+  left: 0;
+  right: 0;
+  height: 1px;
+  transform-origin: 0%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gray-text {
+  color: #d6d6d6;
+}
+.custom-thin {
+  font-weight: 20;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: #e4e4e4;
+}
+
+.background-text {
+  font-size: 13rem;
+}
+
+

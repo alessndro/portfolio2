@@ -27,7 +27,7 @@ function About() {
         
         <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden border border-yellow-400">
             {/* https://www.framer.com/motion/use-scroll/ */}
-            <p className='absolute mx-auto z-20 max-w-4xl text-2xl '>Bridging business insights with front-end expertise, I aspire to excel as a Product Owner, transforming complex ideas into valuable digital solutions.</p>
+            <p className='absolute z-20 max-w-4xl text-2xl '>Bridging business insights with front-end expertise, I aspire to excel as a Product Owner, transforming complex ideas into valuable digital solutions.</p>
           <motion.div style={{ x }} className="flex gap-4 relative z-1 -right-80">
             <div className='group flex h-[450px] w-[1150px] justify-center items-center overflow-hidden border border-blue-500'>
                 <h2 className='background-text relative gray-text'>ABOUT ME</h2>

@@ -4,9 +4,9 @@
 
 
 .progress-bar {
-  position: fixed;
+  position: absolute;
   top: 10vh;
-  border: thin solid gray;
+  border: thin solid black;
   left: 0;
   right: 0;
   height: 1px;
@@ -33,7 +33,7 @@ html, body, #root {
 }
 
 .background-text {
-  font-size: 13rem;
+  font-size: 11rem;
 }
 
 

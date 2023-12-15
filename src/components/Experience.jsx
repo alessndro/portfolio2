@@ -21,7 +21,7 @@ function Experience() {
     
   
     return (
-      <section ref={targetRef} className="relative h-[300vh] border border-red-500 container mx-auto">
+      <section ref={targetRef} className="relative h-[300vh] border border-red-500 container mx-auto px-10">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
             {/* https://www.framer.com/motion/use-scroll/ */}
             {/* <motion.div
@@ -29,9 +29,52 @@ function Experience() {
                 style={{ scaleX: scrollYProgress }}
             /> */}
           <motion.div style={{ x }} className="flex gap-4">
-            {cards.map((card) => {
+            {/* {cards.map((card) => {
               return <Card card={card} key={card.id} />;
-            })}
+            })} */}
+              <div
+                className="group relative h-[450px] w-[100vw] overflow-hidden"
+                >
+                <p className='gray-text text-8xl'>2017-2020</p>
+                <div className='py-20'>
+                    <p className='mb-10 text-2xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
+                    <p className='mb-10 text-2xl font-thin'>MINOR PROGRAMMING</p>
+                    <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
+                </div>
+       
+            </div>
+
+            <div
+                className="group relative h-[450px] w-[100vw] overflow-hidden"
+            >
+                <p className='gray-text text-8xl'>2020-2021</p>
+                <div className='py-20'>
+                    <p className='mb-10 text-2xl font-thin'>MASTER ENTREPRENEURSHIP</p>
+                    <p className='mb-10 text-2xl font-thin'>SCRUM MEMBER TELESUPER</p>
+                    <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
+                </div>
+                <div className="absolute inset-0 z-10 grid place-content-center">
+                <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+                    
+                </p>
+                </div>
+            </div>
+
+            <div
+                className="group relative h-[450px] w-[100vw] overflow-hidden"
+            >
+                <p className='gray-text text-8xl'>2020-2021</p>
+                <div className='py-20'>
+                    <p className='mb-5 text-2xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
+                    <p className='mb-5 text-2xl font-thin'>MINOR PROGRAMMING</p>
+                    <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
+                </div>
+                <div className="absolute inset-0 z-10 grid place-content-center">
+                <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
+                    
+                </p>
+                </div>
+            </div>
           </motion.div>
           <motion.div
                 className="absolute top-10 progress-bar z-2"
@@ -45,12 +88,14 @@ function Experience() {
   const Card = ({ card }) => {
     return (
       <div
-        key={card.id}
-        className="group relative h-[450px] w-[90vw] overflow-hidden bg-neutral-200 border border-black"
+        className="group relative h-[450px] w-[90vw] overflow-hidden border border-black"
       >
-        <div
-          className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"
-        ></div>
+        <p className='gray-text text-8xl'>2017-2020</p>
+        <div className='py-10'>
+            <p className='mb-5 text-2xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
+            <p className='mb-5 text-2xl font-thin'>MINOR PROGRAMMING</p>
+            <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
+        </div>
         <div className="absolute inset-0 z-10 grid place-content-center">
           <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
             {card.title}

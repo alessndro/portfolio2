@@ -95,7 +95,7 @@ export default function Hero() {
                     animate={controls}
                     transition={{ duration: 2, ease: 'easeIn' }}
                     >
-                    <h1 className='text-5xl lg:text-8xl font-extralight custom-thin'>Hi there,</h1>
+                    <h1 className='text-4xl lg:text-8xl font-extralight custom-thin'>Hi there,</h1>
                 </motion.div>
                 <motion.div
                   ref={ref2}
@@ -103,7 +103,7 @@ export default function Hero() {
                   animate={controls2}
                   transition={{ duration: 3, ease: 'easeIn' }}
                   >
-                <p className='text-5xl lg:text-8xl font-extralight mb-3'>I'm Alessandro</p>
+                <p className='text-4xl lg:text-8xl font-extralight custom-thin mb-3'>I'm Alessandro</p>
                 </motion.div>
                 <motion.div
                   ref={ref3}

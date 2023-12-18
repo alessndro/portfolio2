@@ -54,29 +54,34 @@ export default function Projects() {
   return (
     <>
     <div className='h-[200vh] fade-in flex container mx-auto border border-blue-500'>
+        
         <div className='w-1/2 h-full border border-yellow-500 relative'>
          
             <div className='h-[80vh] border border-black sticky top-0'>
-                <div className='border fade-in border-purple-500 px-10 py-40 relative h-full'>
+                <div className='border flex flex-col justify-center items-center md:justify-start fade-in border-purple-500 px-6 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref}
                   initial={{ opacity: 0 }}
                   animate={controls}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   >
-                    <div className='absolute top-5 left-5'>
-                      <p className='font-bold text-2xl'>01</p>
+                    <div className='absolute top-2 left-2 md:top-5 md:left-5'>
+                      <p className='font-bold text-xl md:text-2xl'>01</p>
                     </div>
-                    <div className='absolute bottom-5 left-5'>
-                      <p className='font-bold text-2xl'>HEALTH</p>
+                    <div className='absolute bottom-2 left-2 md:bottom-5 md:left-5' >
+                      <p className='font-bold text-xl md:text-2xl'>HEALTH</p>
                     </div>
-                      <h4 className='text-4xl font-bold'>Calm.</h4>
-                  <p className='mt-2 text-sm'>AI, React, React Router, Firebase Auth, Firestore, Netlify</p>
-                  <p className='mt-5 max-w-xl'>The Calm Platform is a Health platform crafted around the five pillars of health: Sleep, Morning Routine, Evening Routine, Exercise, and Relationships. Users will experience the power of the OpenAI API, which provides custom feedback and tutoring tailored to their individual health journeys. Modern, simple and effective.</p>
+                    <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
+                      <a target="_blank" href="https://spectacular-tartufo-1e017e.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                    </div>
+                      <h4 className='text-2xl font-bold md:text-4xl'>Calm.</h4>
+                  <p className='mt-2 text-xs'>AI, React, React Router, Firebase Auth, Firestore, Netlify</p>
+                  <p className='mt-5 max-w-xl text-xs md:text-lg overflow-y-auto'>The Calm Platform is a Health platform crafted around the five pillars of health: Sleep, Morning Routine, Evening Routine, Exercise, and Relationships. Users will experience the power of the OpenAI API, which provides custom feedback and tutoring tailored to their individual health journeys. Modern, simple and effective.</p>
                   </motion.div>
                 </div>
             </div>
         </div>
+
         <div className='w-1/2 border flex'>
             <div className='border flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
                 {/* <img src={calm2} alt="Iphone mock website" /> */}
@@ -97,22 +102,25 @@ export default function Projects() {
         <div className='w-1/2 h-full border border-yellow-500 relative'>
          
             <div className='h-[80vh] border border-black sticky top-0'>
-              <div className='border fade-in border-purple-500 px-10 py-40 relative h-full'>
+               <div className='border flex flex-col justify-center items-center md:justify-start fade-in border-purple-500 px-6 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref2}
                   initial={{ opacity: 0 }}
                   animate={controls2}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   >
-                    <div className='absolute top-5 left-5'>
-                      <p className='font-bold text-2xl'>02</p>
+                    <div className='absolute top-2 left-2 md:top-5 md:left-5'>
+                      <p className='font-bold text-xl md:text-2xl'>02</p>
                     </div>
-                    <div className='absolute bottom-5 left-5'>
-                      <p className='font-bold text-2xl'>TRAVEL</p>
+                    <div className='absolute bottom-2 left-2 md:bottom-5 md:left-5' >
+                      <p className='font-bold text-xl md:text-2xl'>TRAVEL</p>
                     </div>
-                      <h4 className='text-4xl font-bold'>Traveler's Insight</h4>
+                    <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
+                      <a target="_blank" href="https://gotravelapp.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                    </div>
+                      <h4 className='text-2xl font-bold md:text-4xl'>Traveler's Insight</h4>
                   <p className='mt-2 text-sm'>Next.js 13, TypeScript, OPEN AI API, Netlify</p>
-                  <p className='mt-5 max-w-xl'>Anchored in the innovative use of Next.js 13 and TypeScript, this platform offers a unique blend of technology and personalization. At its core, a dynamic survey shapes your individual travel personality, taking into account your preferences in areas like cuisine and nightlife. Powered by the OPEN AI API, Traveler's Insight goes beyond the ordinary, assigning you a customized travel plan based on your personality.</p>
+                  <p className='mt-5 max-w-xl text-xs md:text-lg overflow-y-auto'>"Traveler's Insight," built with Next.js 13 and TypeScript, features a unique, AI-driven platform. It starts with a survey to gauge your 'travel personality' based on cuisine, nightlife, and more. This creates a personal travel profile, which is then used to develop a tailored travel plan using OPEN AI API.</p>
                   </motion.div>
                 </div>
             </div>
@@ -138,22 +146,25 @@ export default function Projects() {
         <div className='w-1/2 h-full border border-yellow-500 relative'>
          
             <div className='h-[80vh] border border-black sticky top-0'>
-            <div className='border fade-in border-purple-500 px-10 py-40 relative h-full'>
+             <div className='border flex flex-col justify-center items-center md:justify-start fade-in border-purple-500 px-6 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref3}
                   initial={{ opacity: 0 }}
                   animate={controls3}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   >
-                    <div className='absolute top-5 left-5'>
-                      <p className='font-bold text-2xl'>03</p>
+                    <div className='absolute top-2 left-2 md:top-5 md:left-5'>
+                      <p className='font-bold text-xl md:text-2xl'>03</p>
                     </div>
-                    <div className='absolute bottom-5 left-5'>
-                      <p className='font-bold text-2xl'>STUDY</p>
+                    <div className='absolute bottom-2 left-2 md:bottom-5 md:left-5'>
+                      <p className='font-bold text-xl md:text-2xl'>STUDY</p>
                     </div>
-                      <h4 className='text-4xl font-bold'>MindScribe</h4>
+                    <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
+                      <a target="_blank" href="https://gotravelapp.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                    </div>
+                      <h4 className='text-2xl font-bold md:text-4xl'>MindScribe</h4>
                   <p className='mt-2 text-sm'>React, React Router, Firebase, External APIs, Netlify</p>
-                  <p className='mt-5 max-w-xl'>MindScribe is a web application designed to maximize your educational experience. At its heart, MindScribe specializes in transforming complex educational content from videos and articles into concise, comprehensible summaries. Using a combination of APIs, including a summarization service from Rapid API and the OpenAI API, it intelligently condenses information and generates interactive practice questions, deepening your understanding and engagement.</p>
+                  <p className='mt-5 max-w-xl text-xs md:text-lg overflow-y-auto'>MindScribe, a web app, enhances learning by simplifying complex educational material from videos and articles. It uses APIs like Rapid API's summarization service and OpenAI API to create brief summaries, interactive questions and tutoring, boosting comprehension and engagement. </p>
                   </motion.div>
                 </div>
             </div>

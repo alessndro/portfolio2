@@ -1,6 +1,7 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Spline from '@splinetool/react-spline';
+import { motion, useTransform, useScroll } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -8,7 +9,11 @@ export default function Hero() {
         <div className='h-full w-full flex flex-col md:flex-row'>
             <div className='md:w-1/2 md:flex md:justify-center flex-col text-focus-in'>
                 <h1 className='text-8xl font-extralight custom-thin'>Hi there,</h1>
-                <p className='text-8xl font-extralight mb-7'>I'm Alessandro</p>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                >
+                <p className='text-8xl font-extralight mb-7'>I'm Alessandro</p></motion.div>
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially

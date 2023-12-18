@@ -28,7 +28,7 @@ function Experience() {
                 className="progress-bar z-2"
                 style={{ scaleX: scrollYProgress }}
             /> */}
-          <motion.div style={{ x }} className="flex gap-4">
+          <motion.div style={{ x }} className="flex gap-2">
             {/* {cards.map((card) => {
               return <Card card={card} key={card.id} />;
             })} */}
@@ -36,44 +36,75 @@ function Experience() {
                 className="group relative h-[450px] w-[100vw] overflow-hidden"
                 >
                 <p className='gray-text text-8xl'>2017-2020</p>
-                <div className='py-20'>
-                    <p className='mb-10 text-2xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
-                    <p className='mb-10 text-2xl font-thin'>MINOR PROGRAMMING</p>
-                    <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
+                <div className='flex flex-row gap-10'>
+                  <div className='py-20'>
+                      <p className='mb-10 text-xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
+                      <p className='mb-10 text-xl font-thin'>MINOR PROGRAMMING</p>
+                      <p className='text-xl font-thin'>ASSISTENT MANAGER</p>
+                  </div>
+                  <div className='py-20'>
+                      <p className='mb-10 text-xl font-thin'>University of Amsterdam</p>
+                      <p className='mb-10 text-xl font-thin'>University of Amsterdam</p>
+                      <p className='text-xl font-thin'>Coop</p>
+                  </div>
                 </div>
+                  
        
             </div>
 
             <div
                 className="group relative h-[450px] w-[100vw] overflow-hidden"
             >
-                <p className='gray-text text-8xl'>2020-2021</p>
-                <div className='py-20'>
-                    <p className='mb-10 text-2xl font-thin'>MASTER ENTREPRENEURSHIP</p>
-                    <p className='mb-10 text-2xl font-thin'>SCRUM MEMBER TELESUPER</p>
-                    <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
-                </div>
-                <div className="absolute inset-0 z-10 grid place-content-center">
-                <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-                    
-                </p>
+                <p className='gray-text text-8xl'>2020-2022</p>
+                <div className='flex flex-row gap-10'>
+                  <div className='py-20'>
+                    <p className='mb-10 text-xl font-thin'>MASTER ENTREPRENEURSHIP</p>
+                    <p className='mb-10 text-xl font-thin'>SCRUM MEMBER, JR PROJECT LEADER</p>
+                    <p className='text-xl font-thin'>ASSISTENT MANAGER</p>
+                  </div>
+                  <div className='py-20'>
+                      <p className='mb-10 text-xl font-thin'>University of Amsterdam</p>
+                      <p className='mb-10 text-xl font-thin'>Telesuper</p>
+                      <p className='text-xl font-thin'>Coop</p>
+                  </div>
                 </div>
             </div>
 
             <div
                 className="group relative h-[450px] w-[100vw] overflow-hidden"
             >
-                <p className='gray-text text-8xl'>2020-2021</p>
-                <div className='py-20'>
-                    <p className='mb-5 text-2xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
-                    <p className='mb-5 text-2xl font-thin'>MINOR PROGRAMMING</p>
-                    <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
+                <p className='gray-text text-8xl'>2022-2023</p>
+                <div className='flex flex-row gap-10'>
+                  <div className='py-20'>
+                    <p className='mb-10 text-xl font-thin'>BACKPACKING TRIP</p>
+                  </div>
+                  <div className='py-20'>
+                      <p className='mb-10 text-xl font-thin'>South East Asia</p>
+                  </div>
                 </div>
-                <div className="absolute inset-0 z-10 grid place-content-center">
-                <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-                    
-                </p>
+            </div>
+
+            <div
+                className="group relative h-[450px] w-[100vw] overflow-hidden"
+            >
+                <p className='gray-text text-8xl'>2023-2024</p>
+                <div className='flex flex-row gap-10'>
+                  <div className='py-20'>
+                    <p className='mb-10 text-xl font-thin'>INTRODUCTION TO COMPUTER SCIENCE</p>
+                    <p className='mb-10 text-xl font-thin'>UX DESIGN</p>
+                    <p className='mb-10 text-xl font-thin'>FRONT END DEVELOPER BOOTCAMP</p>
+                    <p className='text-xl font-thin'>SCRUM CERTIFICATES I </p>
+                  </div>
+                  <div className='py-20'>
+                      <p className='mb-10 text-xl font-thin'>CS50 Harvard</p>
+                      <p className='mb-10 text-xl font-thin'>Growth Tribe</p>
+                      <p className='mb-10 text-xl font-thin'>Scrimba</p>
+                      <p className='text-xl font-thin'>Scrum.org</p>
+                  </div>
                 </div>
+            </div>
+            <div className='flex items-center justify-center border border-red-500'>
+            <h2 className='gray-text text-8xl'>MY PROJECTS</h2>
             </div>
           </motion.div>
           <motion.div
@@ -82,26 +113,6 @@ function Experience() {
             />
         </div>
       </section>
-    );
-  };
-  
-  const Card = ({ card }) => {
-    return (
-      <div
-        className="group relative h-[450px] w-[90vw] overflow-hidden border border-black"
-      >
-        <p className='gray-text text-8xl'>2017-2020</p>
-        <div className='py-10'>
-            <p className='mb-5 text-2xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
-            <p className='mb-5 text-2xl font-thin'>MINOR PROGRAMMING</p>
-            <p className='text-2xl font-thin'>ASSISTENT MANAGER COOP</p>
-        </div>
-        <div className="absolute inset-0 z-10 grid place-content-center">
-          <p className="bg-gradient-to-br from-white/20 to-white/0 p-8 text-6xl font-black uppercase text-white backdrop-blur-lg">
-            {card.title}
-          </p>
-        </div>
-      </div>
     );
   };
   

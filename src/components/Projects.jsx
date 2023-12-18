@@ -51,16 +51,6 @@ export default function Projects() {
     }
   }, [controls3, inView3]);
 
-
-  React.useEffect(() => {
-    if (inView) {
-      controls.start({ opacity: 1});
-    } else {
-      controls.start({ opacity: 0});
-    }
-  }, [controls, inView]);
-
-
   return (
     <>
     <div className='h-[200vh] fade-in flex container mx-auto border border-blue-500'>

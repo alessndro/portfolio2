@@ -1,6 +1,9 @@
 import '../App.css'
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
+import { useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import React from 'react'
 
 
 function Experience() {
@@ -11,13 +14,56 @@ function Experience() {
   };
   
   const HorizontalScrollCarousel = () => {
-
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+  
+    const controls2 = useAnimation();
+    const [ref2, inView2] = useInView();
+  
+    const controls3 = useAnimation();
+    const [ref3, inView3] = useInView();
+  
+    const controls4 = useAnimation();
+    const [ref4, inView4] = useInView();
+  
+    React.useEffect(() => {
+      if (inView) {
+        controls.start({ opacity: 1});
+      } else {
+        controls.start({ opacity: 0});
+      }
+    }, [controls, inView]);
+  
+    React.useEffect(() => {
+      if (inView2) {
+        controls2.start({ opacity: 1});
+      } else {
+        controls2.start({ opacity: 0});
+      }
+    }, [controls2, inView2]);
+  
+    React.useEffect(() => {
+      if (inView3) {
+        controls3.start({ opacity: 1});
+      } else {
+        controls3.start({ opacity: 0});
+      }
+    }, [controls3, inView3]);
+  
+    React.useEffect(() => {
+      if (inView4) {
+        controls4.start({ opacity: 1});
+      } else {
+        controls4.start({ opacity: 0});
+      }
+    }, [controls4, inView4]);
+  
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
       target: targetRef,
     });
   
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-90%"]);
     
   
     return (
@@ -28,85 +74,104 @@ function Experience() {
                 className="progress-bar z-2"
                 style={{ scaleX: scrollYProgress }}
             /> */}
-          <motion.div style={{ x }} className="flex gap-2">
+          <motion.div style={{ x }} className="flex gap-20 md:gap-2">
             {/* {cards.map((card) => {
               return <Card card={card} key={card.id} />;
             })} */}
-              <div
-                className="group relative h-[450px] w-[100vw] overflow-hidden"
-                >
-                <p className='gray-text text-8xl'>2017-2020</p>
+            <motion.div
+                    ref={ref}
+                    initial={{ opacity: 0 }}
+                    animate={controls}
+                    transition={{ duration: 0.5, ease: 'easeIn' }}
+                    className="group relative h-[450px] w-[100vw] overflow-hidden"
+                    >
+                <p className='gray-text text-7xl md:text-9xl'>2017-2020</p>
+                
                 <div className='flex flex-row gap-10'>
-                  <div className='py-20'>
-                      <p className='mb-10 text-xl font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
-                      <p className='mb-10 text-xl font-thin'>MINOR PROGRAMMING</p>
-                      <p className='text-xl font-thin'>ASSISTENT MANAGER</p>
+                  <div className='py-20 text-md md:text-xl'>
+                      <p className='mb-10 font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
+                      <p className='mb-10 font-thin'>MINOR PROGRAMMING</p>
+                      <p className='font-thin'>ASSISTENT MANAGER</p>
                   </div>
-                  <div className='py-20'>
-                      <p className='mb-10 text-xl font-thin'>University of Amsterdam</p>
-                      <p className='mb-10 text-xl font-thin'>University of Amsterdam</p>
-                      <p className='text-xl font-thin'>Coop</p>
+                  <div className='py-20 text-md md:text-xl'>
+                      <p className='mb-10 font-thin'>University of Amsterdam</p>
+                      <p className='mb-10 font-thin'>University of Amsterdam</p>
+                      <p className='font-thin'>Coop</p>
                   </div>
                 </div>
                   
        
-            </div>
+            </motion.div>
 
-            <div
-                className="group relative h-[450px] w-[100vw] overflow-hidden"
-            >
-                <p className='gray-text text-8xl'>2020-2022</p>
+            <motion.div
+                    ref={ref2}
+                    initial={{ opacity: 0 }}
+                    animate={controls2}
+                    transition={{ duration: 0.5, ease: 'easeIn' }}
+                    className="group relative h-[450px] w-[100vw] overflow-hidden"
+                    >
+                <p className='gray-text text-7xl md:text-9xl'>2020-2022</p>
                 <div className='flex flex-row gap-10'>
-                  <div className='py-20'>
-                    <p className='mb-10 text-xl font-thin'>MASTER ENTREPRENEURSHIP</p>
-                    <p className='mb-10 text-xl font-thin'>SCRUM MEMBER, JR PROJECT LEADER</p>
-                    <p className='text-xl font-thin'>ASSISTENT MANAGER</p>
+                  <div className='py-20 text-md md:text-xl'>
+                    <p className='mb-10 font-thin'>MASTER ENTREPRENEURSHIP</p>
+                    <p className='mb-10 font-thin'>SCRUM MEMBER, JR PROJECT LEADER</p>
+                    <p className='font-thin'>ASSISTENT MANAGER</p>
                   </div>
-                  <div className='py-20'>
-                      <p className='mb-10 text-xl font-thin'>University of Amsterdam</p>
-                      <p className='mb-10 text-xl font-thin'>Telesuper</p>
-                      <p className='text-xl font-thin'>Coop</p>
+                  <div className='py-20 text-md md:text-xl'>
+                      <p className='mb-10 font-thin'>University of Amsterdam</p>
+                      <p className='mb-10 font-thin'>Telesuper</p>
+                      <p className='font-thin'>Coop</p>
                   </div>
                 </div>
-            </div>
+            </motion.div>
 
-            <div
-                className="group relative h-[450px] w-[100vw] overflow-hidden"
+            <motion.div
+                    ref={ref3}
+                    initial={{ opacity: 0 }}
+                    animate={controls3}
+                    transition={{ duration: 0.5, ease: 'easeIn' }}
+                    className="group relative h-[450px] w-[100vw] overflow-hidden"
             >
-                <p className='gray-text text-8xl'>2022-2023</p>
+                <p className='gray-text text-7xl md:text-9xl'>2022-2023</p>
                 <div className='flex flex-row gap-10'>
-                  <div className='py-20'>
-                    <p className='mb-10 text-xl font-thin'>BACKPACKING TRIP</p>
+                  <div className='py-20 text-md md:text-xl'>
+                    <p className='mb-10 font-thin'>BACKPACKING TRIP</p>
                   </div>
-                  <div className='py-20'>
-                      <p className='mb-10 text-xl font-thin'>South East Asia</p>
+                  <div className='py-20 text-md md:text-xl'>
+                      <p className='mb-10 font-thin'>South East Asia</p>
                   </div>
                 </div>
-            </div>
+            </motion.div>
 
-            <div
-                className="group relative h-[450px] w-[100vw] overflow-hidden"
+            <motion.div
+                    ref={ref4}
+                    initial={{ opacity: 0 }}
+                    animate={controls4}
+                    transition={{ duration: 0.5, ease: 'easeIn' }}
+                    className="group relative h-[450px] w-[100vw] overflow-hidden"
             >
-                <p className='gray-text text-8xl'>2023-2024</p>
+                <p className='gray-text text-7xl md:text-9xl'>2023-2024</p>
                 <div className='flex flex-row gap-10'>
-                  <div className='py-20'>
-                    <p className='mb-10 text-xl font-thin'>INTRODUCTION TO COMPUTER SCIENCE</p>
-                    <p className='mb-10 text-xl font-thin'>UX DESIGN</p>
-                    <p className='mb-10 text-xl font-thin'>FRONT END DEVELOPER BOOTCAMP</p>
-                    <p className='text-xl font-thin'>SCRUM CERTIFICATES I </p>
+                  <div className='py-20 text-md md:text-xl'>
+                    <p className='mb-10 font-thin'>INTRODUCTION TO COMPUTER SCIENCE</p>
+                    <p className='mb-10 font-thin'>UX DESIGN</p>
+                    <p className='mb-10 font-thin'>FRONT END DEVELOPER BOOTCAMP</p>
+                    <p className='font-thin'>SCRUM CERTIFICATES I </p>
                   </div>
-                  <div className='py-20'>
-                      <p className='mb-10 text-xl font-thin'>CS50 Harvard</p>
-                      <p className='mb-10 text-xl font-thin'>Growth Tribe</p>
-                      <p className='mb-10 text-xl font-thin'>Scrimba</p>
-                      <p className='text-xl font-thin'>Scrum.org</p>
+                  <div className='py-20 text-md md:text-xl'>
+                      <p className='mb-10 font-thin'>CS50 Harvard</p>
+                      <p className='mb-10 font-thin'>Growth Tribe</p>
+                      <p className='mb-10 font-thin'>Scrimba</p>
+                      <p className='font-thin'>Scrum.org</p>
                   </div>
                 </div>
-            </div>
+            </motion.div>
+
             <div className='flex items-center justify-center border border-red-500'>
             <h2 className='gray-text text-8xl'>MY PROJECTS</h2>
             </div>
           </motion.div>
+          
           <motion.div
                 className="absolute top-10 progress-bar z-2"
                 style={{ scaleX: scrollYProgress }}

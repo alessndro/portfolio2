@@ -13,7 +13,8 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                 >
-                <p className='text-8xl font-extralight mb-7'>I'm Alessandro</p></motion.div>
+                    <p className='text-8xl font-extralight mb-7'>I'm Alessandro</p>
+                </motion.div>
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially

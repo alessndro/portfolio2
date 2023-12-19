@@ -120,7 +120,7 @@ export default function Projects() {
                     </div>
                       <h4 className='text-2xl font-bold md:text-4xl'>Traveler's Insight</h4>
                   <p className='mt-2 text-sm'>Next.js 13, TypeScript, OPEN AI API, Netlify</p>
-                  <p className='mt-5 max-w-xl text-xs md:text-lg overflow-y-auto'>"Traveler's Insight," built with Next.js 13 and TypeScript, features a unique, AI-driven platform. It starts with a survey to gauge your 'travel personality' based on cuisine, nightlife, and more. This creates a personal travel profile, which is then used to develop a tailored travel plan using OPEN AI API.</p>
+                  <p className='mt-5 max-w-xl text-xs md:text-lg overflow-y-auto'>Traveler's Insight built with Next.js 13 and TypeScript, features a unique, AI-driven platform. It starts with a survey to gauge your 'travel personality' based on cuisine, nightlife, and more. This creates a personal travel profile, which is then used to develop a tailored travel plan using OPEN AI API.</p>
                   </motion.div>
                 </div>
             </div>
@@ -160,7 +160,7 @@ export default function Projects() {
                       <p className='font-bold text-xl md:text-2xl'>STUDY</p>
                     </div>
                     <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
-                      <a target="_blank" href="https://gotravelapp.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                      <a target="_blank" href="https://main--lighthearted-tulumba-ad8574.netlify.app/dashboard"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
                     </div>
                       <h4 className='text-2xl font-bold md:text-4xl'>MindScribe</h4>
                   <p className='mt-2 text-sm'>React, React Router, Firebase, External APIs, Netlify</p>

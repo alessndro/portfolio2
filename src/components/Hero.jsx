@@ -14,6 +14,15 @@ export default function Hero() {
 
   const controls3 = useAnimation();
   const [ref3, inView3] = useInView();
+
+  const controls4 = useAnimation();
+  const [ref4, inView4] = useInView();
+
+  const controls5 = useAnimation();
+  const [ref5, inView5] = useInView();
+
+  const controls6 = useAnimation();
+  const [ref6, inView6] = useInView();
     
   React.useEffect(() => {
     if (inView) {
@@ -39,6 +48,30 @@ export default function Hero() {
     }
   }, [controls3, inView3]);
 
+  React.useEffect(() => {
+    if (inView4) {
+      controls4.start({ opacity: 1});
+    } else {
+      controls4.start({ opacity: 0});
+    }
+  }, [controls4, inView4]);
+
+  React.useEffect(() => {
+    if (inView5) {
+      controls5.start({ opacity: 1});
+    } else {
+      controls5.start({ opacity: 0});
+    }
+  }, [controls5, inView5]);
+
+  React.useEffect(() => {
+    if (inView6) {
+      controls6.start({ opacity: 1});
+    } else {
+      controls6.start({ opacity: 0});
+    }
+  }, [controls6, inView6]);
+
   return (
     <header className='font-poppins h-full w-full flex container mx-auto px-20'>
         <div className='h-full w-full flex flex-col md:flex-row'>
@@ -50,7 +83,7 @@ export default function Hero() {
                     animate={controls}
                     transition={{ duration: 2, ease: 'easeIn' }}
                     >
-                    <h1 className='text-4xl lg:text-8xl font-extralight custom-thin'>Hi there,</h1>
+                    <h1 className='text-6xl lg:text-8xl font-extralight custom-thin'>Hi there,</h1>
                 </motion.div>
                 <motion.div
                   ref={ref2}
@@ -58,7 +91,7 @@ export default function Hero() {
                   animate={controls2}
                   transition={{ duration: 3, ease: 'easeIn' }}
                   >
-                <p className='text-4xl lg:text-8xl font-extralight mb-7'>I'm Alessandro</p>
+                <p className='text-6xl lg:text-8xl font-extralight mb-7'>I'm Alessandro</p>
                 </motion.div>
                 <motion.div
                   ref={ref3}
@@ -90,25 +123,25 @@ export default function Hero() {
             
             <div className='flex-col text-focus-in text-center md:hidden'>
             <motion.div
-                    ref={ref}
+                    ref={ref4}
                     initial={{ opacity: 0 }}
-                    animate={controls}
+                    animate={controls4}
                     transition={{ duration: 2, ease: 'easeIn' }}
                     >
                     <h1 className='text-4xl lg:text-8xl font-extralight custom-thin'>Hi there,</h1>
                 </motion.div>
                 <motion.div
-                  ref={ref2}
+                  ref={ref5}
                   initial={{ opacity: 0 }}
-                  animate={controls2}
+                  animate={controls5}
                   transition={{ duration: 3, ease: 'easeIn' }}
                   >
                 <p className='text-4xl lg:text-8xl font-extralight custom-thin mb-3'>I'm Alessandro</p>
                 </motion.div>
                 <motion.div
-                  ref={ref3}
+                  ref={ref6}
                   initial={{ opacity: 0 }}
-                  animate={controls3}
+                  animate={controls6}
                   transition={{ duration: 4, ease: 'easeIn' }}
                   >
                 <TypeAnimation

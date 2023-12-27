@@ -4,24 +4,8 @@ import Spline from '@splinetool/react-spline';
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-// import { AwesomeButton } from 'react-awesome-button';
-// import AwesomeButtonStyles from 'react-awesome-button/src/styles/styles.scss';
 
 import exampleCV from '../assets/sample-cv.pdf'
-
-import { AwesomeButtonProgress, AwesomeButton } from "react-awesome-button";
-import 'react-awesome-button/dist/styles.css';
-
-// function Button() {
-//   return  (
-//   <AwesomeButtonProgress
-//       type="primary"
-//       onPress={(event, release) => {
-//         // do a sync/async task then call `release()`
-//       }}>
-//       Button
-//   </AwesomeButtonProgress>)
-// }
 
 export default function Hero() {
   // Used for fade in

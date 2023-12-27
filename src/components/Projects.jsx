@@ -55,24 +55,24 @@ export default function Projects() {
     <>
     <div className='h-[200vh] fade-in flex container mx-auto'>
         
-        <div className='w-1/2 h-fullrelative'>
+        <div className='w-3/5 h-fullrelative md:w-1/2'>
          
             <div className='h-[80vh] sticky top-0'>
-                <div className=' flex flex-col justify-center items-center md:justify-start fade-in px-6 py-10 md:py-40 md:px-10 relative h-full'>
+                <div className=' flex flex-col justify-center items-center md:justify-start fade-in px-10 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref}
                   initial={{ opacity: 0 }}
                   animate={controls}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   >
-                    <div className='absolute top-2 left-2 md:top-5 md:left-5'>
-                      <p className='font-bold text-xl md:text-2xl'>01</p>
+                    <div className='absolute top-10 left-10 md:top-5 md:left-5'>
+                      <p className='font-bold text-md md:text-2xl'>01</p>
                     </div>
-                    <div className='absolute bottom-2 left-2 md:bottom-5 md:left-5' >
-                      <p className='font-bold text-xl md:text-2xl'>HEALTH</p>
+                    <div className='absolute bottom-10 left-10 md:bottom-5 md:left-5' >
+                      <p className='font-bold text-md md:text-2xl'>HEALTH</p>
                     </div>
-                    <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
-                      <a target="_blank" href="https://spectacular-tartufo-1e017e.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                    <div className='absolute bottom-10 right-10 md:bottom-5 md:right-5' >
+                      <a target="_blank" href="https://spectacular-tartufo-1e017e.netlify.app"><p className='font-bold text-md md:text-2xl'>DEMO</p></a>
                     </div>
                       <h4 className='text-2xl font-bold md:text-4xl'>Calm.</h4>
                   <p className='mt-2 text-xs'>AI, React, React Router, Firebase Auth, Firestore, Netlify</p>
@@ -82,8 +82,8 @@ export default function Projects() {
             </div>
         </div>
 
-        <div className='w-1/2  flex'>
-            <div className='flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
+        <div className='w-2/5 md:w-1/2 flex'>
+            <div className='flex flex-col gap-20 mt-20 p-2 max-w-xl items-center md:w-1/2 '>
                 {/* <img src={calm2} alt="Iphone mock website" /> */}
                 <img src={calm1} alt="Iphone mock website" />
                 <img src={calm3} alt="Iphone mock website" />
@@ -99,24 +99,24 @@ export default function Projects() {
 
 
     <div className='h-[200vh] flex container mx-auto '>
-        <div className='w-1/2 h-full relative'>
+      <div className='w-3/5 h-fullrelative md:w-1/2'>
          
             <div className='h-[80vh] sticky top-0'>
-               <div className='flex flex-col justify-center items-center md:justify-start fade-in px-6 py-10 md:py-40 md:px-10 relative h-full'>
+              <div className=' flex flex-col justify-center items-center md:justify-start fade-in px-10 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref2}
                   initial={{ opacity: 0 }}
                   animate={controls2}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   >
-                    <div className='absolute top-2 left-2 md:top-5 md:left-5'>
-                      <p className='font-bold text-xl md:text-2xl'>02</p>
+                    <div className='absolute top-10 left-10 md:top-5 md:left-5'>
+                      <p className='font-bold text-md md:text-2xl'>02</p>
                     </div>
-                    <div className='absolute bottom-2 left-2 md:bottom-5 md:left-5' >
-                      <p className='font-bold text-xl md:text-2xl'>TRAVEL</p>
+                    <div className='absolute bottom-10 left-10 md:bottom-5 md:left-5' >
+                      <p className='font-bold text-md md:text-2xl'>TRAVEL</p>
                     </div>
-                    <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
-                      <a target="_blank" href="https://gotravelapp.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                    <div className='absolute bottom-10 right-10 md:bottom-5 md:right-5' >
+                      <a target="_blank" href="https://gotravelapp.netlify.app"><p className='font-bold text-md md:text-2xl'>DEMO</p></a>
                     </div>
                       <h4 className='text-2xl font-bold md:text-4xl'>Traveler's Insight</h4>
                   <p className='mt-2 text-sm'>Next.js 13, TypeScript, OPEN AI API, Netlify</p>
@@ -125,8 +125,9 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div className='w-1/2 flex'>
-            <div className='flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
+
+        <div className='w-2/5 md:w-1/2 flex'>
+            <div className='flex flex-col gap-20 p-2 mt-20 max-w-xl items-center md:w-1/2 '>
                 {/* <img src={calm2} alt="Iphone mock website" /> */}
                 <img src={travel1} alt="Iphone mock website" />
                 <img src={travel2} alt="Iphone mock website" />
@@ -143,24 +144,24 @@ export default function Projects() {
 
 
     <div className='h-[200vh] flex container mx-auto'>
-        <div className='w-1/2 h-full  relative'>
+      <div className='w-3/5 h-fullrelative md:w-1/2'>
          
             <div className='h-[80vh] sticky top-0'>
-             <div className='flex flex-col justify-center items-center md:justify-start fade-in px-6 py-10 md:py-40 md:px-10 relative h-full'>
+              <div className='flex flex-col justify-center items-center md:justify-start fade-in px-10 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref3}
                   initial={{ opacity: 0 }}
                   animate={controls3}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   >
-                    <div className='absolute top-2 left-2 md:top-5 md:left-5'>
-                      <p className='font-bold text-xl md:text-2xl'>03</p>
+                    <div className='absolute top-10 left-10 md:top-5 md:left-5'>
+                      <p className='font-bold text-md md:text-2xl'>03</p>
                     </div>
-                    <div className='absolute bottom-2 left-2 md:bottom-5 md:left-5'>
-                      <p className='font-bold text-xl md:text-2xl'>STUDY</p>
+                    <div className='absolute bottom-10 left-10 md:bottom-5 md:left-5'>
+                      <p className='font-bold text-md md:text-2xl'>STUDY</p>
                     </div>
-                    <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
-                      <a target="_blank" href="https://lighthearted-tulumba-ad8574.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                    <div className='absolute bottom-10 right-10 md:bottom-5 md:right-5' >
+                      <a target="_blank" href="https://lighthearted-tulumba-ad8574.netlify.app"><p className='font-bold text-md md:text-2xl'>DEMO</p></a>
                     </div>
                       <h4 className='text-2xl font-bold md:text-4xl'>MindScribe</h4>
                   <p className='mt-2 text-sm'>React, React Router, Firebase, External APIs, Netlify</p>
@@ -169,8 +170,8 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div className='w-1/2 flex'>
-          <div className='flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
+        <div className='w-2/5 md:w-1/2 flex'>
+          <div className='flex flex-col gap-20 p-2 max-w-xl mt-20  items-center md:w-1/2 '>
                 <img src={mind1} alt="Iphone mock website" />
                 <img src={mind3} alt="Iphone mock website" />
             </div>

@@ -22,7 +22,7 @@
 
 .gray-text {
   /* color: #d6d6d6; */
-  color: #a3a3a3
+  color: #b1b1b1
 }
 .custom-thin {
   font-weight: 20;
@@ -31,7 +31,7 @@
 html, body, #root {
   height: 100%;
   /* background-color: #e4e4e4; */
-  background-color: #cccccc;
+  background-color: #bebebe;
 }
 
 .background-text {

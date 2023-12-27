@@ -163,7 +163,7 @@ function Experience() {
             </motion.div>
 
             <div className='flex items-center justify-center '>
-            <h2 className='gray-text text-8xl'>MY PROJECTS</h2>
+            <h2 className='text-8xl'>MY PROJECTS</h2>
             </div>
           </motion.div>
           

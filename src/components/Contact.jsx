@@ -8,7 +8,6 @@ import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
 import send from '../assets/send.svg'
 import phone from '../assets/phone-call.svg'
-import { Link } from 'react-router-dom';
 
 function Contact() {
     return (
@@ -19,6 +18,7 @@ function Contact() {
   };
   
   const HorizontalScrollCarousel = () => {
+    // When element in view, fade in
     const controls = useAnimation();
     const [ref, inView] = useInView();
       
@@ -30,6 +30,7 @@ function Contact() {
       }
     }, [controls, inView]);
 
+    // Create the horizontal scroll whereby change in Y will result in change in x
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
       target: targetRef,
@@ -69,7 +70,6 @@ function Contact() {
     </section>
     );
   };
-  
   
   export default Contact;
   

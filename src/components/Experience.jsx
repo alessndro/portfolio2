@@ -14,6 +14,7 @@ function Experience() {
   };
   
   const HorizontalScrollCarousel = () => {
+    // When element in view, fade in
     const controls = useAnimation();
     const [ref, inView] = useInView();
   
@@ -58,6 +59,7 @@ function Experience() {
       }
     }, [controls4, inView4]);
   
+    // Create the horizontal scroll whereby change in Y will result in change in x
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
       target: targetRef,
@@ -70,14 +72,7 @@ function Experience() {
       <section ref={targetRef} className="relative h-[300vh] border border-red-500 container mx-auto px-10">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
             {/* https://www.framer.com/motion/use-scroll/ */}
-            {/* <motion.div
-                className="progress-bar z-2"
-                style={{ scaleX: scrollYProgress }}
-            /> */}
           <motion.div style={{ x }} className="flex gap-20 md:gap-2">
-            {/* {cards.map((card) => {
-              return <Card card={card} key={card.id} />;
-            })} */}
             <motion.div
                     ref={ref}
                     initial={{ opacity: 0 }}
@@ -182,26 +177,4 @@ function Experience() {
   };
   
   export default Experience;
-  
-  const cards = [
-    {
-      url: "/imgs/abstract/1.jpg",
-      title: "Title 1",
-      id: 1,
-    },
-    {
-      url: "/imgs/abstract/2.jpg",
-      title: "Title 2",
-      id: 2,
-    },
-    {
-      url: "/imgs/abstract/3.jpg",
-      title: "Title 3",
-      id: 3,
-    },
-    {
-      url: "/imgs/abstract/4.jpg",
-      title: "Title 4",
-      id: 4,
-    },
-  ];
+ 

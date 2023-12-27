@@ -6,6 +6,7 @@ import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 export default function Hero() {
+  // Used for fade in
   const controls = useAnimation();
   const [ref, inView] = useInView();
 

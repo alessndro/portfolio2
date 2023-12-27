@@ -171,10 +171,8 @@ export default function Projects() {
         </div>
         <div className='w-1/2 border flex'>
           <div className='border flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
-                {/* <img src={calm2} alt="Iphone mock website" /> */}
                 <img src={mind1} alt="Iphone mock website" />
                 <img src={mind3} alt="Iphone mock website" />
-                {/* <img src={calm4} alt="Iphone mock website" /> */}
             </div>
             <div className='border flex-col border-black w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
               <img src={mind2} alt="Iphone mock website" />

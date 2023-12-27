@@ -14,9 +14,10 @@ function About() {
   };
   
   const HorizontalScrollCarousel = () => {
+    // When element in view, fade in
     const controls = useAnimation();
     const [ref, inView] = useInView();
-      
+    
     React.useEffect(() => {
       if (inView) {
         controls.start({ opacity: 1});
@@ -25,6 +26,7 @@ function About() {
       }
     }, [controls, inView]);
 
+    // Create the horizontal scroll whereby change in Y will result in change in x
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
       target: targetRef,
@@ -61,15 +63,3 @@ function About() {
   
   export default About;
   
-  const cards = [
-    {
-      url: "/imgs/abstract/1.jpg",
-      title: "ABOUT ME",
-      id: 1,
-    },
-    {
-      url: "/imgs/abstract/2.jpg",
-      title: "Title 2",
-      id: 2,
-    },
-  ];

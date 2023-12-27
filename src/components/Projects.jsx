@@ -160,7 +160,7 @@ export default function Projects() {
                       <p className='font-bold text-xl md:text-2xl'>STUDY</p>
                     </div>
                     <div className='absolute bottom-2 right-2 md:bottom-5 md:right-5' >
-                      <a target="_blank" href="https://main--lighthearted-tulumba-ad8574.netlify.app/dashboard"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
+                      <a target="_blank" href="https://lighthearted-tulumba-ad8574.netlify.app"><p className='font-bold text-xl md:text-2xl'>DEMO</p></a>
                     </div>
                       <h4 className='text-2xl font-bold md:text-4xl'>MindScribe</h4>
                   <p className='mt-2 text-sm'>React, React Router, Firebase, External APIs, Netlify</p>

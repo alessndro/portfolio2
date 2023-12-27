@@ -84,7 +84,7 @@ export default function Hero() {
                     animate={controls}
                     transition={{ duration: 2, ease: 'easeIn' }}
                     >
-                    <h1 className='text-6xl lg:text-8xl font-extralight custom-thin'>Hi there,</h1>
+                    <h1 className='text-6xl lg:text-8xl font-extralight'>Hi there,</h1>
                 </motion.div>
                 <motion.div
                   ref={ref2}

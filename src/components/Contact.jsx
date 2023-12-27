@@ -40,10 +40,10 @@ function Contact() {
     
   
     return (
-      <section ref={targetRef} className="relative h-[200vh] border border-red-500 container mx-auto">
+      <section ref={targetRef} className="relative h-[200vh] container mx-auto">
         
         <motion.div
-          className="sticky top-0 flex h-screen items-center justify-center overflow-hidden border border-yellow-400"
+          className="sticky top-0 flex h-screen items-center justify-center overflow-hidden "
                     ref={ref}
                     initial={{ opacity: 0 }}
                     animate={controls}
@@ -61,7 +61,7 @@ function Contact() {
               </div>
             </div>
           <motion.div style={{ x }} className="flex gap-4 relative z-1 -left-80">
-            <div className='group flex h-[450px] w-[1150px] justify-center items-center overflow-hidden border border-blue-500'>
+            <div className='group flex h-[450px] w-[1150px] justify-center items-center overflow-hidden'>
                 <h2 className='background-text relative gray-text'>CONTACT ME</h2>
             </div>
           </motion.div>

@@ -36,10 +36,10 @@ function About() {
     
   
     return (
-      <section ref={targetRef} className="relative h-[200vh] border border-red-500 container mx-auto">
+      <section ref={targetRef} className="relative h-[200vh] container mx-auto">
         
         <motion.div
-          className="sticky top-0 flex h-screen items-center justify-center overflow-hidden border border-yellow-400"
+          className="sticky top-0 flex h-screen items-center justify-center overflow-hidden"
                     ref={ref}
                     initial={{ opacity: 0 }}
                     animate={controls}
@@ -50,7 +50,7 @@ function About() {
            
             <p className='absolute z-20 max-w-4xl text-md p-20 md:text-2xl'>Bridging business insights with front-end expertise, I aspire to excel as a Product Owner, transforming complex ideas into valuable digital solutions.</p>
           <motion.div style={{ x }} className="flex gap-4 relative z-1 -right-80">
-            <div className='group flex h-[450px] w-[1150px] justify-center items-center overflow-hidden border border-blue-500'>
+            <div className='group flex h-[450px] w-[1150px] justify-center items-center overflow-hidden'>
                 <h2 className='background-text relative gray-text'>ABOUT ME</h2>
             </div>
           </motion.div>

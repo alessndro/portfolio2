@@ -69,7 +69,7 @@ function Experience() {
     
   
     return (
-      <section ref={targetRef} className="relative h-[300vh] border border-red-500 container mx-auto px-10">
+      <section ref={targetRef} className="relative h-[300vh]  container mx-auto px-10">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
             {/* https://www.framer.com/motion/use-scroll/ */}
           <motion.div style={{ x }} className="flex gap-20 md:gap-2">
@@ -162,7 +162,7 @@ function Experience() {
                 </div>
             </motion.div>
 
-            <div className='flex items-center justify-center border border-red-500'>
+            <div className='flex items-center justify-center '>
             <h2 className='gray-text text-8xl'>MY PROJECTS</h2>
             </div>
           </motion.div>

@@ -53,12 +53,12 @@ export default function Projects() {
 
   return (
     <>
-    <div className='h-[200vh] fade-in flex container mx-auto border border-blue-500'>
+    <div className='h-[200vh] fade-in flex container mx-auto'>
         
-        <div className='w-1/2 h-full border border-yellow-500 relative'>
+        <div className='w-1/2 h-fullrelative'>
          
-            <div className='h-[80vh] border border-black sticky top-0'>
-                <div className='border flex flex-col justify-center items-center md:justify-start fade-in border-purple-500 px-6 py-10 md:py-40 md:px-10 relative h-full'>
+            <div className='h-[80vh] sticky top-0'>
+                <div className=' flex flex-col justify-center items-center md:justify-start fade-in px-6 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref}
                   initial={{ opacity: 0 }}
@@ -82,14 +82,14 @@ export default function Projects() {
             </div>
         </div>
 
-        <div className='w-1/2 border flex'>
-            <div className='border flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
+        <div className='w-1/2  flex'>
+            <div className='flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
                 {/* <img src={calm2} alt="Iphone mock website" /> */}
                 <img src={calm1} alt="Iphone mock website" />
                 <img src={calm3} alt="Iphone mock website" />
                 {/* <img src={calm4} alt="Iphone mock website" /> */}
             </div>
-            <div className='border flex-col border-black w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
+            <div className='flex-col  w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
               <img src={calm2} alt="Iphone mock website" />
               <img src={calm4} alt="Iphone mock website" />
             </div>
@@ -98,11 +98,11 @@ export default function Projects() {
 
 
 
-    <div className='h-[200vh] flex container mx-auto border border-blue-500'>
-        <div className='w-1/2 h-full border border-yellow-500 relative'>
+    <div className='h-[200vh] flex container mx-auto '>
+        <div className='w-1/2 h-full relative'>
          
-            <div className='h-[80vh] border border-black sticky top-0'>
-               <div className='border flex flex-col justify-center items-center md:justify-start fade-in border-purple-500 px-6 py-10 md:py-40 md:px-10 relative h-full'>
+            <div className='h-[80vh] sticky top-0'>
+               <div className='flex flex-col justify-center items-center md:justify-start fade-in px-6 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref2}
                   initial={{ opacity: 0 }}
@@ -125,14 +125,14 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div className='w-1/2 border flex'>
-            <div className='border flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
+        <div className='w-1/2 flex'>
+            <div className='flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
                 {/* <img src={calm2} alt="Iphone mock website" /> */}
                 <img src={travel1} alt="Iphone mock website" />
                 <img src={travel2} alt="Iphone mock website" />
                 {/* <img src={calm4} alt="Iphone mock website" /> */}
             </div>
-            <div className='border flex-col border-black w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
+            <div className='flex-col  w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
               <img src={travel3} alt="Iphone mock website" />
               <img src={travel4} alt="Iphone mock website" />
             </div>
@@ -142,11 +142,11 @@ export default function Projects() {
 
 
 
-    <div className='h-[200vh] flex container mx-auto border border-blue-500'>
-        <div className='w-1/2 h-full border border-yellow-500 relative'>
+    <div className='h-[200vh] flex container mx-auto'>
+        <div className='w-1/2 h-full  relative'>
          
-            <div className='h-[80vh] border border-black sticky top-0'>
-             <div className='border flex flex-col justify-center items-center md:justify-start fade-in border-purple-500 px-6 py-10 md:py-40 md:px-10 relative h-full'>
+            <div className='h-[80vh] sticky top-0'>
+             <div className='flex flex-col justify-center items-center md:justify-start fade-in px-6 py-10 md:py-40 md:px-10 relative h-full'>
                   <motion.div
                   ref={ref3}
                   initial={{ opacity: 0 }}
@@ -169,12 +169,12 @@ export default function Projects() {
                 </div>
             </div>
         </div>
-        <div className='w-1/2 border flex'>
-          <div className='border flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
+        <div className='w-1/2 flex'>
+          <div className='flex flex-col gap-20 p-2 max-w-xl items-center md:w-1/2 '>
                 <img src={mind1} alt="Iphone mock website" />
                 <img src={mind3} alt="Iphone mock website" />
             </div>
-            <div className='border flex-col border-black w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
+            <div className='flex-col w-1/2 hidden p-2 gap-40 justify-center max-w-xl md:flex'>
               <img src={mind2} alt="Iphone mock website" />
               <img src={mind4} alt="Iphone mock website" />
             </div>

@@ -69,7 +69,7 @@ function Experience() {
     
   
     return (
-      <section ref={targetRef} className="relative h-[300vh]  container mx-auto px-10">
+      <section ref={targetRef} className="relative h-[300vh]  container mx-auto px-5 md:px-10">
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
             {/* https://www.framer.com/motion/use-scroll/ */}
           <motion.div style={{ x }} className="flex gap-20 md:gap-2">
@@ -82,7 +82,7 @@ function Experience() {
                     >
                 <p className='gray-text text-7xl md:text-9xl'>2017-2020</p>
                 
-                <div className='flex flex-row gap-10'>
+                <div className='flex flex-row gap-5 md:gap-10'>
                   <div className='py-20 text-md md:text-xl'>
                       <p className='mb-10 font-thin'>BACHELOR BUSINESS ADMINISTRATION</p>
                       <p className='mb-10 font-thin'>MINOR PROGRAMMING</p>
@@ -106,7 +106,7 @@ function Experience() {
                     className="group relative h-[450px] w-[100vw] overflow-hidden"
                     >
                 <p className='gray-text text-7xl md:text-9xl'>2020-2022</p>
-                <div className='flex flex-row gap-10'>
+                <div className='flex flex-row gap-5 md:gap-10'>
                   <div className='py-20 text-md md:text-xl'>
                     <p className='mb-10 font-thin'>MASTER ENTREPRENEURSHIP</p>
                     <p className='mb-10 font-thin'>SCRUM MEMBER, JR PROJECT LEADER</p>
@@ -128,7 +128,7 @@ function Experience() {
                     className="group relative h-[450px] w-[100vw] overflow-hidden"
             >
                 <p className='gray-text text-7xl md:text-9xl'>2022-2023</p>
-                <div className='flex flex-row gap-10'>
+                <div className='flex flex-row gap-5 md:gap-10'>
                   <div className='py-20 text-md md:text-xl'>
                     <p className='mb-10 font-thin'>BACKPACKING TRIP</p>
                   </div>
@@ -146,7 +146,7 @@ function Experience() {
                     className="group relative h-[450px] w-[100vw] overflow-hidden"
             >
                 <p className='gray-text text-7xl md:text-9xl'>2023-2024</p>
-                <div className='flex flex-row gap-10'>
+                <div className='flex flex-row gap-5 md:gap-10'>
                   <div className='py-20 text-md md:text-xl'>
                     <p className='mb-10 font-thin'>INTRODUCTION TO COMPUTER SCIENCE</p>
                     <p className='mb-10 font-thin'>UX DESIGN</p>
@@ -163,7 +163,7 @@ function Experience() {
             </motion.div>
 
             <div className='flex items-center justify-center '>
-            <h2 className='text-8xl'>MY PROJECTS</h2>
+            <h2 className='text-6xl lg:text-8xl'>MY PROJECTS</h2>
             </div>
           </motion.div>
           

@@ -4,6 +4,24 @@ import Spline from '@splinetool/react-spline';
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+// import { AwesomeButton } from 'react-awesome-button';
+// import AwesomeButtonStyles from 'react-awesome-button/src/styles/styles.scss';
+
+import exampleCV from '../assets/sample-cv.pdf'
+
+import { AwesomeButtonProgress, AwesomeButton } from "react-awesome-button";
+import 'react-awesome-button/dist/styles.css';
+
+// function Button() {
+//   return  (
+//   <AwesomeButtonProgress
+//       type="primary"
+//       onPress={(event, release) => {
+//         // do a sync/async task then call `release()`
+//       }}>
+//       Button
+//   </AwesomeButtonProgress>)
+// }
 
 export default function Hero() {
   // Used for fade in
@@ -24,6 +42,9 @@ export default function Hero() {
 
   const controls6 = useAnimation();
   const [ref6, inView6] = useInView();
+
+  const controls7 = useAnimation();
+  const [ref7, inView7] = useInView();
     
   React.useEffect(() => {
     if (inView) {
@@ -73,9 +94,29 @@ export default function Hero() {
     }
   }, [controls6, inView6]);
 
+  React.useEffect(() => {
+    if (inView7) {
+      controls7.start({ opacity: 1});
+    } else {
+      controls7.start({ opacity: 0});
+    }
+  }, [controls7, inView7]);
+
   return (
     <header className='font-poppins h-full w-full flex container mx-auto px-20'>
-        <div className='h-full w-full flex flex-col md:flex-row'>
+        <div className='h-full w-full flex flex-col md:flex-row relative'>
+            <motion.div
+                  ref={ref7}
+                  initial={{ opacity: 0 }}
+                  animate={controls7}
+                  transition={{ duration: 4, ease: 'easeIn' }}
+                  className='absolute mx-auto w-full flex justify-center bottom-5'
+                  >
+                <a href={exampleCV} download="myExampleCv" target='_blank'>
+                  <button className='border border-black rounded-xl text-black py-2 px-4 fade-in'>Download CV</button>
+                  {/* <Button /> */}
+                </a>
+            </motion.div>
             
             <div className='hidden md:w-1/2 md:flex md:justify-center flex-col text-focus-in'>
                 <motion.div

@@ -5,7 +5,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import exampleCV from '../assets/sample-cv.pdf'
+import AlessandroCV from '../assets/AlessandroDegenkampCV.pdf'
 
 export default function Hero() {
   // Used for fade in
@@ -96,7 +96,7 @@ export default function Hero() {
                   transition={{ duration: 4, ease: 'easeIn' }}
                   className='absolute mx-auto w-full flex justify-center bottom-5'
                   >
-                <a href={exampleCV} download="myExampleCv" target='_blank'>
+                <a href={AlessandroCV} download="AlessandroDegenkampCV" target='_blank'>
                   <button className='border border-black rounded-xl text-black py-2 px-4 fade-in'>Download CV</button>
                   {/* <Button /> */}
                 </a>

@@ -5,7 +5,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import AlessandroCV from '../assets/AlessandroDegenkampCV.pdf'
+import AlessandroCV from '../assets/AlessandroCv.pdf'
 
 export default function Hero() {
   // Used for fade in
